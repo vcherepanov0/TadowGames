@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHUB</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            background-color: #191718;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .thanks{
+            color: #FF9708;
+        }
+        img{
+            width: 50%;
+            min-width: 200px;
+        }
+        .btn{
+            background-color: #FF9708;
+            display: block;
+            width: 80%;
+            text-align: center;
+            text-decoration: none;
+            color: #191718;
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+       
+
+        @keyframes ring {
+            0% {
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+            100% {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrapper">
+<h1>
+    <span class="thanks">Thanks</span> <br> for installing our app!
+
+</h1>
+    <img src="logo.png" alt="">
+    <a href="dhub.scheme://" class="btn">Back to App</a>
+
+</div>
+<script>
+    function goToApp(e) {
+        location.href = ''
+    }
+</script>
+</body>
+</html>
